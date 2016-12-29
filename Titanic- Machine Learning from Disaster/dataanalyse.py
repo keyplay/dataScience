@@ -1,6 +1,6 @@
 #! python2.7
 # -*- coding: utf-8 -*-
-# dataAnalyse.py - analyse the data to know which feature should be used in model.
+# dataanalyse.py - analyse the data to know which feature should be used in model.
 
 import numpy as np
 import pandas as pd
