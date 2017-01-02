@@ -25,12 +25,12 @@ def sim_tanimoto(prefs, person1, person2):
 # Number of results and similarity function are optional params.
 def topMatches(prefs,person,n=5,similarity=sim_tanimoto):
 
-  scores=[(similarity(prefs,person,other),other) for other in prefs if other!=person]
+    scores=[(similarity(prefs,person,other),other) for other in prefs if other!=person]
 
-  scores.sort()
-  scores.reverse()
+    scores.sort()
+    scores.reverse()
 
-  return scores[0:n]
+    return scores[0:n]
 
 # test
 critics={'Lisa Rose': {'Lady in the Water': 2.5, 'Snakes on a Plane': 3.5,
