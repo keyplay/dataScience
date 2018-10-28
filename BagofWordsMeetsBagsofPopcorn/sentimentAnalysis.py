@@ -20,7 +20,7 @@ def review_to_words(raw_review):
     return(" ".join( meaningful_words )) 
 
     
-train = pd.read_csv("../input/labeledTrainData.tsv", header=0, delimiter="\t", quoting=3)
+train = pd.read_csv("./labeledTrainData.tsv", header=0, delimiter="\t", quoting=3)
                     
 
 print("Cleaning and parsing the training set movie reviews...\n")
@@ -50,7 +50,7 @@ forest = RandomForestClassifier(n_estimators = 100)
 forest = forest.fit(train_data_features, train["sentiment"])
 
 
-test = pd.read_csv("../input/testData.tsv", header=0, delimiter="\t", quoting=3)
+test = pd.read_csv("./testData.tsv", header=0, delimiter="\t", quoting=3)
 
 print(test.shape)
 
